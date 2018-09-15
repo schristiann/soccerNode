@@ -12,7 +12,7 @@ var usersRouter = require('./routes/users');
 var teamsRouter = require('./routes/team.route');
 var bodyParser= require('body-parser');
 
-
+//connect to database
 mongoose.connect('mongodb://127.0.0.1:27017/test', { useNewUrlParser: true })
     .then(()=> { console.log(`Succesfully Connected to the Mongodb Database  at URL : mongodb://127.0.0.1:27017/test`)})
     .catch(()=> { console.log(`Error Connecting to the Mongodb Database at URL : mongodb://127.0.0.1:27017/test`)})
